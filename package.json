@@ -10,9 +10,11 @@
   "author": "",
   "license": "ISC",
   "dependencies": {
-    "crypto-js": "^4.2.0"
+    "crypto-js": "^4.2.0",
+    "websocket": "^1.0.35"
   },
   "devDependencies": {
+    "@types/websocket": "^1.0.10",
     "typescript": "^5.8.2"
   }
 }
