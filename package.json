@@ -1,12 +1,18 @@
 {
   "name": "xfyun-tts-stt",
   "version": "1.0.0",
-  "description": "",
+  "description": "科大讯飞语音流式WebApi集成包",
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "keywords": [],
   "author": "",
-  "license": "ISC"
+  "license": "ISC",
+  "dependencies": {
+    "crypto-js": "^4.2.0"
+  },
+  "devDependencies": {
+    "typescript": "^5.8.2"
+  }
 }
