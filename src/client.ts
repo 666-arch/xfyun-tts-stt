@@ -1,19 +1,14 @@
 import TTS from './tts';
-interface IOptions {
-    APP_ID: string;
-    API_KEY: string;
-    API_SECRET: string;
-}
+import { Config } from './types';
 class XFYunClient {
-    private APP_ID: string;
-    private API_KEY: string;
-    private API_SECRET: string;
-    // private TTS: TTS
-    constructor(options: IOptions) {
-        this.APP_ID = options.APP_ID;
-        this.API_KEY = options.API_KEY;
-        this.API_SECRET = options.API_SECRET;
-        
+    constructor(options: Config) {
+        this.validateConfig(options)
+        new TTS({ ...options })
+    }
+    private validateConfig(config: Config) {
+        if (!config.appid || !config.apiKey || !config.apiSecret) {
+            throw new Error('Missing required authenication parameters')
+        }
     }
 }
 export default XFYunClient;
