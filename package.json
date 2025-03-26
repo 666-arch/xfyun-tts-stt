@@ -3,11 +3,16 @@
   "version": "1.0.0",
   "description": "科大讯飞语音流式WebApi集成包",
   "main": "index.js",
+  "files": [
+    "dist",
+    "src/utils/processor.worker",
+    "src/utils/index.umd"
+  ],
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
-  "keywords": [],
-  "author": "",
+  "keywords": ["xfyun", "Ai"],
+  "author": "huangchao",
   "license": "ISC",
   "dependencies": {
     "crypto-js": "^4.2.0",

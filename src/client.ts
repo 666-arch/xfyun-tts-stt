@@ -4,6 +4,7 @@ class XFYunClient {
     constructor(options: Config) {
         this.validateConfig(options)
         new TTS({ ...options })
+        console.log('init')
     }
     private validateConfig(config: Config) {
         if (!config.appid || !config.apiKey || !config.apiSecret) {
@@ -12,3 +13,4 @@ class XFYunClient {
     }
 }
 export default XFYunClient;
+
