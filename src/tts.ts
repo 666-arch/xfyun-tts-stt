@@ -1,6 +1,7 @@
 import webSocket from 'websocket'
 import { Config } from './types';
 import CryptoJS from 'crypto-js';
+
 class TTS {
     private appid: string;
     private apiKey: string;
@@ -37,7 +38,7 @@ class TTS {
             throw new Error('WebSocket not supported')
         }
         this.ttsWS.onopen = () => {
-            
+
         }
     }
 }
